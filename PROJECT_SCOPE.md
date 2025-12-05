@@ -1,38 +1,38 @@
-# Proje Kapsamı ve Amacı: NullPoint
+# Project Scope and Purpose: NullPoint
 
-## 1. Problem Tanımı
-Bilimsel araştırmalarda "Pozitif Yayın Önyargısı" (Positive Publication Bias) nedeniyle, başarısızlıkla sonuçlanan deneyler (negatif bulgular) genellikle yayınlanmaz ve rafa kaldırılır. Bu durum iki büyük soruna yol açar:
-1.  **Mali Kayıp:** Araştırma şirketleri başarısız olan projelere yatırdıkları parayı geri kazanamazlar (Batık Maliyet).
-2.  **Zaman Kaybı:** Dünyanın başka bir yerindeki diğer araştırmacılar, daha önce denenmiş ve başarısız olmuş bir yöntemi tekrar denerler.
+## 1. Problem Definition
+Due to "Positive Publication Bias" in scientific research, experiments resulting in failure (negative findings) are often unpublished and shelved. This leads to two major problems:
+1.  **Financial Loss:** Research companies cannot recover the money invested in failed projects (Sunk Cost).
+2.  **Time Waste:** Other researchers elsewhere in the world repeat a method that has already been tried and failed, wasting time.
 
-## 2. Çözüm: NullPoint
-NullPoint, negatif verilerin değerli bir varlık (asset) olarak işlem gördüğü bir pazar yeridir.
+## 2. Solution: NullPoint
+NullPoint is a marketplace where negative data is traded as a valuable asset.
 
-*   **Satıcılar (Akademisyenler/Startuplar):** Başarısız deneylerini (raw data, metodoloji) sisteme yükler, anonimleştirir ve satarak gelir elde ederler.
-*   **Alıcılar (Büyük İlaç Şirketleri/Kurumlar):** Kendi Ar-Ge süreçlerinde zaman kaybetmemek için bu "neyin çalışmadığını gösteren" verileri satın alırlar. Makine öğrenmesi modellerini eğitmek için negatif veriye ihtiyaç duyarlar.
+*   **Sellers (Academics/Startups):** Upload their failed experiments (raw data, methodology), anonymize them, and sell them to generate revenue.
+*   **Buyers (Big Pharma/Institutions):** Purchase this data showing "what doesn't work" to avoid wasting time in their own R&D processes. They also need negative data to train machine learning models.
 
-## 3. Hedef Kitle (Personas)
+## 3. Target Audience (Personas)
 
-*   **Dr. Demo Researcher (Satıcı):** Akademik fonu bitmek üzere olan, elinde yayınlanmamış binlerce başarısız deney verisi bulunan bir araştırmacı. Verilerini satarak laboratuvarına yeni fon sağlamak istiyor.
-*   **PharmaCorp R&D Lead (Alıcı):** Yeni bir ilaç molekülü üzerinde çalışıyor. Rakiplerinin 2 yıl önce bu molekülü deneyip başarısız olduğunu öğrenmek için 15.000$ ödemeye hazır; çünkü bu bilgi onlara 2 yıl ve 2 Milyon $ kazandıracak.
+*   **Dr. Demo Researcher (Seller):** A researcher whose academic funding is running out and has thousands of unpublished failed experiment data points. Wants to secure new funding for their lab by selling data.
+*   **PharmaCorp R&D Lead (Buyer):** Working on a new drug molecule. Willing to pay $15,000 to learn that competitors tried and failed with this molecule 2 years ago; because this information will save them 2 years and $2 Million.
 
-## 4. MVP (Minimum Viable Product) Kapsamı
+## 4. MVP (Minimum Viable Product) Scope
 
-Bu prototip, iş fikrinin temel fonksiyonlarını doğrulamak için tasarlanmıştır:
+This prototype is designed to validate the core functions of the business idea:
 
-### Dahil Olan Özellikler (In Scope)
-*   **Veri Listeleme:** Kategorize edilmiş deney kartları.
-*   **Detaylı İnceleme:** Veri setinin kalitesini anlamak için önizleme tabloları ve grafikler.
-*   **Satın Alma Simülasyonu:** Kredi sistemi ile anlık satın alma deneyimi.
-*   **Doğrulama Göstergeleri:** "Peer Reviewed", "AI Verified" gibi güven sinyalleri.
-*   **Veri Yükleme Akışı:** Satıcıların veri giriş sürecinin (Metadata, Dosya, Anonimleştirme) simülasyonu.
+### In Scope
+*   **Data Listing:** Categorized experiment cards.
+*   **Detailed Review:** Preview tables and charts to understand the quality of the dataset.
+*   **Purchase Simulation:** Instant purchasing experience with a credit system.
+*   **Verification Indicators:** Trust signals like "Peer Reviewed", "AI Verified".
+*   **Upload Flow:** Simulation of the seller's data entry process (Metadata, File, Anonymization).
 
-### Dahil Olmayan Özellikler (Out of Scope - Gelecek Fazlar)
-*   Gerçek dosya barındırma (AWS S3 vb.).
-*   Gerçek ödeme sistemi entegrasyonu (Stripe).
-*   Blockchain tabanlı IP (Fikri Mülkiyet) takibi.
-*   Gerçek kullanıcı kimlik doğrulama (Auth0).
+### Out of Scope (Future Phases)
+*   Real file hosting (AWS S3, etc.).
+*   Real payment system integration (Stripe).
+*   Blockchain-based IP (Intellectual Property) tracking.
+*   Real user authentication (Auth0).
 
-## 5. Başarı Kriterleri
-Kullanıcının şu akışı sorunsuz tamamlayabilmesi projenin başarısıdır:
-`Ana Sayfa -> İlgili Deneyi Arama -> Detayları İnceleme (Grafik/Tablo) -> Kredi ile Satın Alma -> Dashboard'da Görüntüleme`
+## 5. Success Criteria
+The project is considered successful if a user can smoothly complete the following flow:
+`Home Page -> Search Relevant Experiment -> Review Details (Chart/Table) -> Purchase with Credits -> View in Dashboard`

@@ -1,50 +1,50 @@
-# NullPoint - Negatif Bilimsel Veri Pazarı (MVP)
+# NullPoint - Negative Scientific Data Marketplace (MVP)
 
-NullPoint, başarısız bilimsel deneylerin (negatif bulgular) alınıp satıldığı kavramsal bir veri pazarı platformudur. Araştırmacıların "batık maliyetlerini" gelire dönüştürmesini ve diğer araştırmacıların aynı hataları tekrarlayarak zaman kaybetmesini önlemeyi amaçlar.
+NullPoint is a conceptual data marketplace where failed scientific experiments (negative findings) are bought and sold. It aims to enable researchers to turn "sunk costs" into revenue and prevent other researchers from wasting time repeating the same mistakes.
 
-Bu proje, React ve TypeScript kullanılarak geliştirilmiş, tamamen işlevsel bir ön yüz (frontend) prototipidir. Arka uç (backend) bağlantısı yoktur; tüm veriler ve iş mantığı istemci tarafında (mock data) simüle edilmiştir.
+This project is a fully functional frontend prototype developed using React and TypeScript. There is no backend connection; all data and business logic are simulated on the client side (mock data).
 
-## 🚀 Özellikler
+## 🚀 Features
 
-*   **Pazar Yeri (Marketplace):** Detaylı filtreleme (Kategori, Aşama, Fiyat), arama ve sıralama özellikleri.
-*   **Veri Görselleştirme:** Deney detaylarında kategoriye özel (Çizgi, Saçılım, Sütun) dinamik grafikler ve veri tabloları.
-*   **Çoklu Dil Desteği (i18n):** İngilizce ve Türkçe arasında anlık geçiş.
-*   **Dashboard:** Kullanıcı kredileri, satın alma geçmişi ve harcama analizleri.
-*   **Yükleme Simülasyonu:** Çok adımlı (multi-step) veri yükleme formu.
-*   **Dokümantasyon Sayfaları:** Gizlilik, IP hakları ve doğrulama süreçleri için bilgilendirici sayfalar.
+*   **Marketplace:** Detailed filtering (Category, Stage, Price), search, and sorting capabilities.
+*   **Data Visualization:** Dynamic charts (Line, Scatter, Bar) and data tables specific to the experiment category in the details view.
+*   **Multi-language Support (i18n):** Instant switching between English and Turkish.
+*   **Dashboard:** User credits, purchase history, and spending analytics.
+*   **Upload Simulation:** Multi-step data upload form.
+*   **Documentation Pages:** Informative pages for Privacy, IP Rights, and Verification processes.
 
-## 🛠️ Teknoloji Yığını
+## 🛠️ Tech Stack
 
 *   **Core:** React 18, TypeScript
 *   **Styling:** Tailwind CSS
 *   **Icons:** Lucide React
 *   **Charts:** Recharts
-*   **State Management:** React Context API (i18n için) & Local State (useState/useReducer)
-*   **Build/Bundler:** (Ortama göre Vite veya Create React App)
+*   **State Management:** React Context API (for i18n) & Local State (useState/useReducer)
+*   **Build/Bundler:** (Vite or Create React App depending on environment)
 
-## 📂 Kurulum ve Çalıştırma
+## 📂 Installation and Running
 
-Bu proje modern bir Node.js ortamı gerektirir.
+This project requires a modern Node.js environment.
 
-1.  **Bağımlılıkları Yükleyin:**
+1.  **Install Dependencies:**
     ```bash
     npm install
     ```
 
-2.  **Geliştirme Sunucusunu Başlatın:**
+2.  **Start Development Server:**
     ```bash
     npm start
-    # veya
+    # or
     npm run dev
     ```
 
-3.  **Tarayıcıda Açın:**
-    Uygulama genellikle `http://localhost:3000` veya `http://localhost:5173` adresinde çalışacaktır.
+3.  **Open in Browser:**
+    The application will typically run at `http://localhost:3000` or `http://localhost:5173`.
 
-## 🧪 Mock Veri Yapısı
+## 🧪 Mock Data Structure
 
-Uygulama, veritabanı yerine `constants.ts` dosyasında tanımlanan zengin bir mock veri seti kullanır. Sayfa her yenilendiğinde veriler sıfırlanır, ancak oturum süresince yapılan satın almalar ve yüklemeler state içinde tutulur.
+Instead of a database, the application uses a rich mock data set defined in the `constants.ts` file. Data resets every time the page is refreshed, but purchases and uploads made during the session are kept in the state.
 
-## 📄 Lisans
+## 📄 License
 
-Bu proje bir MVP prototipidir ve eğitim/sunum amaçlı hazırlanmıştır.
+This project is an MVP prototype created for educational and presentation purposes.
